@@ -15,6 +15,8 @@ RUN apk add nodejs npm
 RUN curl -fL https://getcli.jfrog.io | sh \
     && mv ./jfrog /usr/bin/ \
     && chmod +x /usr/bin/jfrog
+    
+ENV JFROG_CLI_LOG_LEVEL=DEBUG
 
 COPY "entrypoint.sh" "/entrypoint.sh"
 RUN chmod +x /entrypoint.sh
