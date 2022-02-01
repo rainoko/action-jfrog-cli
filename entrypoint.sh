@@ -23,6 +23,13 @@ then
   cd $INPUT_WORKING_DIRECTORY
 fi
 
+# Capture output
+output=$( ls )
+echo "$output"
+
+output=$( ls lib/build/libs )
+echo "$output"
+
 # Log command for info
 echo "[Info] jfrog rt $*"
 
