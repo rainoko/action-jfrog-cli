@@ -24,11 +24,11 @@ then
 fi
 
 # Capture output
-output=$( ls )
-echo "$output"
+output=$( ls . )
+echo "[Info] ls $output"
 
 output=$( ls lib/build/libs )
-echo "$output"
+echo "[Info] ls lib $output"
 
 # Log command for info
 echo "[Info] jfrog rt $*"
