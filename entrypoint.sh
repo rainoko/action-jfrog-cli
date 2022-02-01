@@ -2,7 +2,7 @@
 
 set -e
 
-echo "Authentication using $INPUT_CREDENTIALS_TYPE";
+echo "AAAA Authentication using $INPUT_CREDENTIALS_TYPE";
 
 # Authenticate to the server
 if [ $INPUT_CREDENTIALS_TYPE == "username" ];
